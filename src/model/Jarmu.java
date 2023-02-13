@@ -1,15 +1,21 @@
 package model;
 
 public abstract class Jarmu {
-    private boolean beinditva;
-    private boolean uzemanyag;
-    private boolean megerkezett;
+    protected boolean beinditva;
+    protected boolean uzemanyag;
+    protected boolean megerkezett;
     
-    public void beindit() {};
-    public void leallit() {};
+    public void beindit() {
+    beinditva = true;
+    };
+    public void leallit() {
+    beinditva = false;
+    };
     public boolean tankol() {
     return true;
     }
-    abstract public boolean halad();
+    public boolean halad() {
+    return true;
+    };
     
 }
