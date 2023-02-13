@@ -4,6 +4,12 @@ public abstract class Jarmu {
     protected boolean beinditva = false;
     protected boolean uzemanyag = true;
     protected boolean megerkezett = false;
+
+    public Jarmu() {
+        boolean beinditva = false;
+        boolean uzemanyag = true;
+        boolean megerkezett = false;
+    }
     
     public void beindit() {
     beinditva = true;
