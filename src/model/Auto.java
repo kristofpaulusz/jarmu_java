@@ -13,7 +13,7 @@ public class Auto extends Jarmu {
     
     @Override
     public boolean halad() {
-        uzemanyag = false;
+        
         Random myR = new Random();
         if (myR.nextInt(1, 4) == 1) {
             defekt = true;
@@ -21,6 +21,10 @@ public class Auto extends Jarmu {
         if (defekt) {
             return false;
         }
-        else return true;
+        else {
+            megerkezett = true;
+            uzemanyag = false;
+            return true;
+                    }
     }
 }

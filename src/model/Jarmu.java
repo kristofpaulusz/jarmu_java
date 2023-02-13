@@ -1,9 +1,9 @@
 package model;
 
 public abstract class Jarmu {
-    protected boolean beinditva;
-    protected boolean uzemanyag;
-    protected boolean megerkezett;
+    protected boolean beinditva = false;
+    protected boolean uzemanyag = true;
+    protected boolean megerkezett = false;
     
     public void beindit() {
     beinditva = true;
